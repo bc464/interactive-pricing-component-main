@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <header>
+    <div class="main-heading">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p> 
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row1">
+        <div class="pageviews">
+          <p><span id="demo" class="pageviews-total">0000</span>
+          <span id="kb" class="kiloBytes">K</span>
+          <span class="page">Pageviews</span></p>
+        </div>
+        <div class="cost-indicator">
+          <p>
+            <span class="dollar-sign">$
+            <span id="cost" class="cost-amount">00</span></span>
+            <span class="cost-total"> /</span>
+            <span class="duration-indicator" id="month"> month</span>
+            <span class="duration-indicator" id="year">year</span>
+          </p>
+        </div>
+      </div class="row1">
+    <div class="row2">
+      <div class="slidecontainer">
+        <input type="range" min="10" max="1000" value="100"
+        step="10" class="top-slider" id="myRange">
+      </div>
+    </div>
+    <div class="row3">
+        <p class="monthly">Monthly Billing</p>
+        <p>
+        <label for="billing" class="switch">
+          <input id="billing" class="billing" type="checkbox" ><span class="slider round"></span>
+        </label >
+        </p>
+        <p class="yearly">Yearly Billing <span class="discount desktop-discount">25% discount</span><span class="discount mobile-discount">-25%</span></p>
+      </div>
+    <div class="horisontal-line">
+    <hr >
+  </div>
+    <div class="row4">
+      <div class="benefits">
+        <p class="benefit-text"><img class="icon-check" src="./images/icon-check.svg" alt="checkbox icon"><span  >Unlimited websites</span></p>
+        <p class="benefit-text"><img class="icon-check" src="./images/icon-check.svg" alt="checkbox icon"><span class="benefit-text" >100% data ownership</span></p>
+        <p class="benefit-text"><img class="icon-check" src="./images/icon-check.svg" alt="checkbox icon"><span class="benefit-text" >Email reports</span></p>
+      </div>
+      <div class="trial-btn">
+        <button class="btn">Start my trial</button>
+      </div>
+    </div>
+    </div class="container">
+   </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">brian</a>.
+    </div>
+</body>
+</html>
